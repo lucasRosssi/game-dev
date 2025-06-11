@@ -61,10 +61,10 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+            <img src={logo} alt="logo" className="w-9 h-9 object-contain rounded-full" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              LOHIT&nbsp;
-              <span className="sm:block hidden">KOLLURI</span>
+              LUCAS&nbsp;
+              <span className="sm:block hidden">ROSSI</span>
             </p>
           </Link>
           {renderNavLinks(false)}
