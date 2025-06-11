@@ -11,13 +11,9 @@ import desktop2 from "./company/desktop2.png";
 import cpp from "./tech-stack/cpp.png";
 import ue from "./tech-stack/ue.png";
 
-// Import project images
-import weatherpedia from "./projects/WeatherPedia.png";
-import termpw from "./projects/termpw.png";
-import payloadmaster from "./projects/payloadmaster.png";
-import mhft from "./projects/mhft.png";
-import sketcher from "./projects/sketcher.png";
-import CompileVortex from "./projects/CompileVortex.png";
+// Import project media
+import circleOfTheElements from "./projects/circle-of-the-elements.mp4";
+
 
 // Import common assets
 import logo from "./lucas.jpeg";
@@ -34,13 +30,8 @@ export {
   desktop2,
   cpp,
   ue,
+  circleOfTheElements,
   github,
-  weatherpedia,
-  termpw,
-  payloadmaster,
-  mhft,
-  sketcher,
-  CompileVortex,
   logo,
   menu,
   close,

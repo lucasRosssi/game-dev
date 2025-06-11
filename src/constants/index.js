@@ -1,19 +1,11 @@
 import {
   cpp,
   ue,
-  edunet,
   mobile,
   mobile2,
-  weatherpedia,
-  termpw,
-  payloadmaster,
-  mhft,
-  sketcher,
-  mathwork,
-  CompileVortex,
-  eduskill,
   desktop,
   desktop2,
+  circleOfTheElements,
 } from "../assets";
 
 export const navLinks = [
@@ -91,6 +83,8 @@ export const experiences = [
   },
 ];
 
+export const technologies = [];
+
 export const projects = [
   {
     name: "Circle of the Elements",
@@ -106,7 +100,7 @@ export const projects = [
       { name: "animation", color: "pink-text-gradient" },
       { name: "data-driven", color: "orange-text-gradient" },
     ],
-    image: weatherpedia,
-    source_code_link: "https://github.com/lohitkolluri/WeatherPedia",
+    video: circleOfTheElements,
+    source_code_link: "https://github.com/lucasRosssi/GameplayAbilitySystem_Aura",
   },
 ];

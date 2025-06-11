@@ -55,6 +55,8 @@
   -webkit-text-fill-color: transparent;
 }
 
+
+
 .pink-text-gradient {
   background: linear-gradient(to top, #7703fc, #fc03cf);
   -webkit-background-clip: text;
