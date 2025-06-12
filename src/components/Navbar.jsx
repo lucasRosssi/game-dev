@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { close, logo, menu } from '../assets';
-import { navLinks } from '../constants';
+import { navLinks, socialMediaLinks } from '../constants';
 import { styles } from '../styles';
 
 const Navbar = () => {
@@ -20,31 +20,48 @@ const Navbar = () => {
   }, [toggle]);
 
   const renderNavLinks = (isSecondary) => (
-    <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
-      {navLinks.map((link) => (
+    <>
+      <ul className={`list-none ${isSecondary ? 'flex sm:hidden' : 'hidden sm:flex'} flex-row gap-6`}>
+        {navLinks.map((link) => (
+          <li
+            key={link.id}
+            className={`${
+              active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+            } hover:text-white text-[20px] font-medium cursor-pointer`}
+            onClick={() => {
+              setActive(link.title);
+              if (isSecondary) {
+                setToggle(false);
+              }
+            }}
+          >
+            <a href={`#${link.id}`}>{link.title}</a>
+          </li>
+        ))}
         <li
-          key={link.id}
-          className={`${
-            active === link.title ? 'text-white' : isSecondary ? 'text-secondary' : 'text-white'
+          className={`text-${
+            isSecondary ? 'secondary' : 'white'
           } hover:text-white text-[20px] font-medium cursor-pointer`}
-          onClick={() => {
-            setActive(link.title);
-            if (isSecondary) {
-              setToggle(false);
-            }
-          }}
         >
-          <a href={`#${link.id}`}>{link.title}</a>
+          <button onClick={toggleResume}>Resume</button>
         </li>
-      ))}
-      <li
-        className={`text-${
-          isSecondary ? 'secondary' : 'white'
-        } hover:text-white text-[20px] font-medium cursor-pointer`}
-      >
-        <button onClick={toggleResume}>Resume</button>
-      </li>
-    </ul>
+      </ul>
+      <ul className={`list-none flex flex-row gap-3`}>
+        {socialMediaLinks.map(social => (
+          <li
+            key={social.title}
+            className="cursor-pointer"
+            onClick={() => {
+              window.open(social.link, "_blank");
+            }}
+          >
+            <div style={social.bg ? { backgroundColor: social.bg, borderRadius: 999 } : undefined}>
+              <img src={social.icon} width={32} height={32} />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </>
   );
 
   return (

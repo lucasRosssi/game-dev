@@ -55,7 +55,14 @@
   -webkit-text-fill-color: transparent;
 }
 
+p#attributes span:not(#stars) {
+  color: white;
+}
 
+p#attributes,
+p#attributes span#stars {
+  color: #915EFF;
+}
 
 .pink-text-gradient {
   background: linear-gradient(to top, #7703fc, #fc03cf);

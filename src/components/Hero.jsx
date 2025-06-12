@@ -2,6 +2,8 @@ import { styles } from "../styles";
 import Typewriter from "typewriter-effect";
 
 const Hero = () => {
+  const stars = '<span id="stars">★★★★★</span>';
+
   return (
     <section className="relative w-full h-fit mx-auto">
       <div className={`inset-0 pt-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
@@ -14,11 +16,35 @@ const Hero = () => {
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="text-[#915EFF]">Lucas</span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I do
+          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Skill Tree
             <Typewriter
               options={{
-                strings: ["Gameplay Mechanics", "AI", "Animation", "GAS", "UI", "Motion Matching"],
+                strings: [
+                  `Gameplay Mechanics ${stars}`,
+                  `AI ${stars}`,
+                  `Animation ${stars}`,
+                  `GAS ${stars}`,
+                  `UI ${stars}`,
+                ],
+                autoStart: true,
+                loop: true,
+                loopCount: Infinity,
+                deleteSpeed: "natural",
+                pauseFor: 1000,
+              }}
+            />
+          </p>
+          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100`}>
+            Perks
+            <Typewriter
+              options={{
+                strings: [
+                  `Fast Learner ${stars}`,
+                  `Team Player ${stars}`,
+                  `Problem Solver ${stars}`,
+                  `Clean Coder ${stars}`,
+                ],
                 autoStart: true,
                 loop: true,
                 loopCount: Infinity,

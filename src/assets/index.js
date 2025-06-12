@@ -15,6 +15,9 @@ import ue from "./tech-stack/ue.png";
 import circleOfTheElements from "./projects/circle-of-the-elements.mp4";
 import blitzshot from "./projects/blitzshot.mp4";
 
+// Import social media
+import linkedin from "./social/linkedin.png";
+
 
 // Import common assets
 import logo from "./lucas.jpeg";
@@ -33,6 +36,7 @@ export {
   ue,
   circleOfTheElements,
   blitzshot,
+  linkedin,
   github,
   logo,
   menu,

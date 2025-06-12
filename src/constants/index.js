@@ -7,6 +7,8 @@ import {
   desktop2,
   circleOfTheElements,
   blitzshot,
+  linkedin,
+  github,
 } from "../assets";
 
 export const navLinks = [
@@ -26,6 +28,18 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+];
+
+export const socialMediaLinks = [
+  {
+    icon: linkedin,
+    link: 'https://www.linkedin.com/in/lucas-rosssi/',
+    bg: 'white',
+  },
+  {
+    icon: github,
+    link: 'https://github.com/lucasRosssi/',
+  }
 ];
 
 export const services = [
