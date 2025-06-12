@@ -34,7 +34,7 @@ export const navLinks = [
 export const socialMediaLinks = [
   {
     icon: resume,
-    link: '/game-dev/LucasRossiMarinho_GameDeveloper.pdf',
+    link: 'https://drive.google.com/file/d/1oWaGCd9dPvP4OUzW_NkIaZgVqZOuOLMK/view?usp=sharing',
     title: 'Resume',
   },
   {
@@ -158,5 +158,6 @@ export const projects = [
       { name: "MotionMatching", color: "pink-text-gradient" },
       { name: "multiplayer", color: "orange-text-gradient" },
     ],
+    source_code_link: 'https://github.com/lucasRosssi/starblast',
   },
 ];
