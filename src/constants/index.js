@@ -9,37 +9,45 @@ import {
   blitzshot,
   linkedin,
   github,
+  resume,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "Backstory",
   },
   {
     id: "projects",
-    title: "Projects",
+    title: "Quest Log",
   },
   {
     id: "work",
-    title: "Work",
+    title: "Achievements",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "Team Up",
   },
 ];
 
 export const socialMediaLinks = [
   {
+    icon: resume,
+    link: '/game-dev/LucasRossiMarinho_GameDeveloper.pdf',
+    title: 'Resume',
+  },
+  {
     icon: linkedin,
     link: 'https://www.linkedin.com/in/lucas-rosssi/',
+    title: 'LinkedIn',
     bg: 'white',
   },
   {
     icon: github,
     link: 'https://github.com/lucasRosssi/',
-  }
+    title: 'GitHub',
+  },
 ];
 
 export const services = [

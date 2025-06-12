@@ -8,11 +8,6 @@ const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
 
-  const toggleResume = () => {
-    const resumeUrl = '/game-dev/LucasRossiMarinho_GameDeveloper.pdf';
-    window.open(resumeUrl);
-  };
-
   useEffect(() => {
     if (toggle) {
       setActive('');
@@ -38,13 +33,6 @@ const Navbar = () => {
             <a href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
-        <li
-          className={`text-${
-            isSecondary ? 'secondary' : 'white'
-          } hover:text-white text-[20px] font-medium cursor-pointer`}
-        >
-          <button onClick={toggleResume}>Resume</button>
-        </li>
       </ul>
       <ul className={`list-none flex flex-row gap-3`}>
         {socialMediaLinks.map(social => (
@@ -54,6 +42,7 @@ const Navbar = () => {
             onClick={() => {
               window.open(social.link, "_blank");
             }}
+            title={social.title}
           >
             <div style={social.bg ? { backgroundColor: social.bg, borderRadius: 999 } : undefined}>
               <img src={social.icon} width={32} height={32} />

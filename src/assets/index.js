@@ -17,6 +17,7 @@ import blitzshot from "./projects/blitzshot.mp4";
 
 // Import social media
 import linkedin from "./social/linkedin.png";
+import resume from "./social/resume.png";
 
 
 // Import common assets
@@ -38,6 +39,7 @@ export {
   blitzshot,
   linkedin,
   github,
+  resume,
   logo,
   menu,
   close,
