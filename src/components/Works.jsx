@@ -9,18 +9,22 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 const ProjectCard = ({ name, description, tags, image, video, source_code_link }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring")}>
-      <div onClick={() => window.open(source_code_link, "_blank")}>
+    <motion.div 
+      className="sm:w-[48%] w-full" 
+      onClick={source_code_link ? () => window.open(source_code_link, "_blank") : undefined} 
+      variants={fadeIn("up", "spring")}
+    >
+      <div>
         <Tilt
           options={{
             max: 45,
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full cursor-pointer"
+          className={`bg-tertiary p-5 rounded-2xl w-full${source_code_link ? " cursor-pointer" : ""}`}
         >
           <div 
-            className="relative w-full h-[230px]"
+            className="relative w-full h-[400px]"
           >
             {image && <img
               src={image}
@@ -34,6 +38,11 @@ const ProjectCard = ({ name, description, tags, image, video, source_code_link }
               autoPlay
               muted
               loop
+            />}
+            {!image && !video && <img
+              src="https://dev.epicgames.com/community/api/documentation/image/meta_tag?path=en-us/unreal-engine/API/Plugins/IntroTutorials/FTutorialCategory/Icon&application_version=5.5"
+              alt="project_image"
+              className="w-full h-full object-cover rounded-2xl"
             />}
           </div>
           <div className="mt-5">
@@ -53,7 +62,7 @@ const ProjectCard = ({ name, description, tags, image, video, source_code_link }
   );
 };
 
-const Works = () => {
+const Projects = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -76,4 +85,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Projects, "projects");

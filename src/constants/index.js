@@ -6,12 +6,17 @@ import {
   desktop,
   desktop2,
   circleOfTheElements,
+  blitzshot,
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
     title: "About",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "work",
@@ -98,9 +103,38 @@ export const projects = [
       { name: "AI", color: "blue-text-gradient" },
       { name: "UI", color: "green-text-gradient" },
       { name: "animation", color: "pink-text-gradient" },
-      { name: "data-driven", color: "orange-text-gradient" },
     ],
     video: circleOfTheElements,
-    source_code_link: "https://github.com/lucasRosssi/GameplayAbilitySystem_Aura",
+    source_code_link: "https://github.com/lucasRosssi/circle-of-the-elements",
+  },
+  {
+    name: "Blitzshot",
+    description:
+      "3rd Person PVE Shooter with multiple weapon types, ammo resources, regular and boss enemies. Players can choose different characters fully animated.",
+    tags: [
+      { name: "UnrealEngine", color: "blue-text-gradient" },
+      { name: "C++", color: "orange-text-gradient" },
+      { name: "blueprints", color: "green-text-gradient" },
+      { name: "animation", color: "pink-text-gradient" },
+      { name: "AI", color: "orange-text-gradient" },
+      { name: "UI", color: "blue-text-gradient" },
+    ],
+    video: blitzshot,
+    source_code_link: "https://github.com/lucasRosssi/Blitzshot",
+  },
+  {
+    name: "Starblast (WIP)",
+    description:
+      "3rd Person Co-op Shooter currently under development. It will feature a variety of weapons, abilities and interesting enemies, with in an engaging combat system.",
+    tags: [
+      { name: "UnrealEngine", color: "blue-text-gradient" },
+      { name: "C++", color: "green-text-gradient" },
+      { name: "blueprints", color: "pink-text-gradient" },
+      { name: "GAS", color: "orange-text-gradient" },
+      { name: "AI", color: "blue-text-gradient" },
+      { name: "UI", color: "green-text-gradient" },
+      { name: "MotionMatching", color: "pink-text-gradient" },
+      { name: "multiplayer", color: "orange-text-gradient" },
+    ],
   },
 ];

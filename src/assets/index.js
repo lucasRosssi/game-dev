@@ -13,6 +13,7 @@ import ue from "./tech-stack/ue.png";
 
 // Import project media
 import circleOfTheElements from "./projects/circle-of-the-elements.mp4";
+import blitzshot from "./projects/blitzshot.mp4";
 
 
 // Import common assets
@@ -31,6 +32,7 @@ export {
   cpp,
   ue,
   circleOfTheElements,
+  blitzshot,
   github,
   logo,
   menu,
