@@ -30,7 +30,7 @@ const Navbar = () => {
               }
             }}
           >
-            <a href={`#${link.id}`}>{link.title}</a>
+            <a className='pixel-text' href={`#${link.id}`}>{link.title}</a>
           </li>
         ))}
       </ul>
@@ -68,9 +68,9 @@ const Navbar = () => {
             }}
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain rounded-full" />
-            <p className="text-white text-[20px] font-bold cursor-pointer flex">
+            <p className="text-white text-[20px] font-bold cursor-pointer flex pixel-text">
               Lucas&nbsp;
-              <span className="sm:block hidden">Rossi</span>
+              <span className="sm:block hidden pixel-text">Rossi</span>
             </p>
           </Link>
           {renderNavLinks(false)}

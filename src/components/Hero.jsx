@@ -13,10 +13,10 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Lucas</span>
+          <h1 className={`${styles.heroHeadText} text-white pixel-text`}>
+            Hi, I'm <span className="text-[#915EFF] pixel-text">Lucas</span>
           </h1>
-          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100 pixel-text`}>
             Skill Tree
             <Typewriter
               options={{
@@ -32,10 +32,11 @@ const Hero = () => {
                 loopCount: Infinity,
                 deleteSpeed: "natural",
                 pauseFor: 1000,
+                wrapperClassName: 'pixel-text',
               }}
             />
           </p>
-          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <p id="attributes" className={`${styles.heroSubText} mt-2 text-white-100 pixel-text`}>
             Perks
             <Typewriter
               options={{
@@ -50,6 +51,7 @@ const Hero = () => {
                 loopCount: Infinity,
                 deleteSpeed: "natural",
                 pauseFor: 1000,
+                wrapperClassName: 'pixel-text',
               }}
             />
           </p>
