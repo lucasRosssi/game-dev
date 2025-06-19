@@ -34,7 +34,7 @@ export const navLinks = [
 export const socialMediaLinks = [
   {
     icon: resume,
-    link: 'https://drive.google.com/file/d/1oWaGCd9dPvP4OUzW_NkIaZgVqZOuOLMK/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/19qVjtVNzd4MyF4X4TmWjJMCQ-CyZCZof/view?usp=sharing',
     title: 'Resume',
   },
   {
