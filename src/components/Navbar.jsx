@@ -60,7 +60,7 @@ const Navbar = () => {
       >
         <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
           <Link
-            to="/"
+            to="/game-dev"
             className="flex items-center gap-2"
             onClick={() => {
               setActive('');
@@ -69,8 +69,8 @@ const Navbar = () => {
           >
             <img src={logo} alt="logo" className="w-9 h-9 object-contain rounded-full" />
             <p className="text-white text-[20px] font-bold cursor-pointer flex">
-              LUCAS&nbsp;
-              <span className="sm:block hidden">ROSSI</span>
+              Lucas&nbsp;
+              <span className="sm:block hidden">Rossi</span>
             </p>
           </Link>
           {renderNavLinks(false)}
