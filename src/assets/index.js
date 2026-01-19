@@ -10,10 +10,12 @@ import desktop2 from "./company/desktop2.png";
 // Import tech stack images
 import cpp from "./tech-stack/cpp.png";
 import ue from "./tech-stack/ue.png";
+import javascript from "./tech/javascript.png";
+import git from "./tech/git.png";
 
 // Import project media
 import circleOfTheElements from "./projects/circle-of-the-elements.mp4";
-import blitzshot from "./projects/blitzshot.mp4";
+import kalyskah from "./projects/kalyskah.png";
 
 // Import social media
 import linkedin from "./social/linkedin.png";
@@ -35,8 +37,10 @@ export {
   desktop2,
   cpp,
   ue,
+  javascript,
+  git,
   circleOfTheElements,
-  blitzshot,
+  kalyskah,
   linkedin,
   github,
   resume,

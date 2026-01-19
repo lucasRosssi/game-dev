@@ -172,3 +172,20 @@ p#attributes span#stars {
 .confirmation {
   color: #00ff00;
 }
+
+.gradient-border {
+  --border-alpha: 0;
+  border: 5px solid transparent;
+  background:
+    linear-gradient(#151030, #151030) padding-box,
+    linear-gradient(
+      135deg,
+      rgba(0, 255, 225, var(--border-alpha)),
+      rgba(236, 72, 153, var(--border-alpha))
+    ) border-box;
+  transition: --border-alpha 0.5s ease;
+}
+
+.gradient-border:hover {
+  --border-alpha: 1;
+}
